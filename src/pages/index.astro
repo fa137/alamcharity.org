@@ -1,0 +1,34 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Header from "~/components/widgets/Header.astro";
+import Hero2 from "~/components/widgets/Hero2.astro";
+
+const meta = {
+	title: "AlamCharity.org",
+};
+---
+
+<Layout {meta}>
+	<Fragment slot="header">
+		<Header />
+	</Fragment>
+
+	<Hero2
+		image={{
+			src: import("~/assets/images/alamcharity-orphanage.jpg"),
+			alt: "AlamCharity.org Image",
+		}}
+	>
+		<Fragment slot="title">
+			Learn about
+			<span class="text-accent dark:text-white highlight">ALAMCHAIRTY</span>
+		</Fragment>
+
+		<Fragment slot="subtitle">
+			<span>
+				<span class="font-semibold">AlamCharity</span> is a nonprofit org</span
+			>
+		</Fragment>
+	</Hero2>
+</Layout>
