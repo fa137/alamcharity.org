@@ -1,0 +1,59 @@
+---
+const goals = [
+	{
+		title: "Provide Education",
+		description:
+			"We aim to provide access to education for children in orphanages and impoverished areas. Education is critical for breaking the cycle of poverty and giving children the tools they need to succeed. By providing education, we hope to empower children to build a better future for themselves and their communities.",
+	},
+	{
+		title: "Deliver Healthcare",
+		description:
+			"We are committed to delivering healthcare services to ensure that children in orphanages and disadvantaged communities receive necessary medical care. This includes providing access to basic medical supplies, treatment for illnesses and injuries, and preventative care measures. By promoting good health, we believe we can create a stronger, healthier community.",
+	},
+	{
+		title: "Secure Basic Needs",
+		description:
+			"We recognize that basic needs such as food, clothing, and shelter must be met in order to create a stable foundation for children to thrive. We are dedicated to securing these needs for those in need, and ensuring that children have a safe and comfortable environment to call home. By meeting these basic needs, we hope to improve the health and wellbeing of the children we serve.",
+	},
+	{
+		title: "Establish Safe Living Environments",
+		description:
+			"We believe that every child deserves to live in a safe and supportive environment. We are committed to establishing safe living environments for children in orphanages, ensuring they are protected from harm and able to grow and develop in a nurturing environment. By providing a safe living environment, we hope to give children a sense of stability and security that will benefit them for years to come.",
+	},
+	{
+		title: "Collaborate with Local Communities",
+		description:
+			"We understand that the best way to create lasting change is by working together with the local community. We collaborate with local leaders and organizations to identify and address the most pressing needs of the community. By involving the community in our efforts, we can create a sense of ownership and ensure that our programs are tailored to the unique needs of the community.",
+	},
+	{
+		title: "Offer Skills Training",
+		description:
+			"We believe that every child should have the opportunity to reach their full potential. We offer skills training and vocational education to young people, equipping them with the skills they need to succeed in the workforce. By providing training, we hope to empower young people to build a better future for themselves and their families.",
+	},
+	{
+		title: "Build Sustainable Partnerships",
+		description:
+			"We recognize that sustainable change requires long-term partnerships. We build sustainable relationships with partner organizations to ensure ongoing support for the communities we serve. By partnering with other organizations, we can leverage our collective resources and expertise to make a greater impact on the lives of the people we serve.",
+	},
+	{
+		title: "Advocate for Children's Rights",
+		description:
+			"We are committed to advocating for the rights of orphaned and vulnerable children. We raise awareness about the issues these children face, and work to ensure that their rights are protected. By advocating for children's rights, we hope to create a world where every child has access to the resources they need to thrive.",
+	},
+];
+---
+
+<div class="container px-3 sm:px-6 mb-5 mx-auto flex sm:flex-row">
+	<div class="grid grid-cols-2 gap-2">
+		{
+			goals.map((goal) => (
+				<div class="p-2 basis-1/3">
+					<span class="text-base title font-medium border-b-2 border-green-400">
+						{goal.title}
+					</span>
+					<div class="text-sm text-gray-500 pt-2">{goal.description}</div>
+				</div>
+			))
+		}
+	</div>
+</div>
