@@ -1,34 +1,47 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 
-import Header from "~/components/widgets/Header.astro";
-import Hero2 from "~/components/widgets/Hero2.astro";
+import Intro from "~/components/Intro.astro";
+import Goals from "~/components/Goals.astro";
 
 const meta = {
-	title: "AlamCharity.org",
+	title: "alamcharity.org - towards a better future",
 };
 ---
 
 <Layout {meta}>
-	<Fragment slot="header">
-		<Header />
-	</Fragment>
-
-	<Hero2
+	<Intro
 		image={{
 			src: import("~/assets/images/alamcharity-orphanage.jpg"),
 			alt: "AlamCharity.org Image",
 		}}
 	>
 		<Fragment slot="title">
-			Learn about
-			<span class="text-accent dark:text-white highlight">ALAMCHAIRTY</span>
+			alam<span class="text-green-600 ml-1">charity</span>
 		</Fragment>
 
 		<Fragment slot="subtitle">
-			<span>
-				<span class="font-semibold">AlamCharity</span> is a nonprofit org</span
-			>
+			We are a nonprofit organization dedicated to providing support and
+			assistance to orphanages and underprivileged communities in Bangladesh.
+			Our cause is to help those who are in need, particularly the children who
+			have been left without parents or a stable home environment. Through our
+			work, we aim to provide access to education, healthcare, and basic
+			necessities such as food, clothing, and shelter. By supporting orphanages
+			and disadvantaged communities, we seek to improve the quality of life and
+			provide opportunities for a better future for those who are most
+			vulnerable. Our goal is to make a lasting impact on the lives of the
+			people we serve, and to create a world where everyone has access to the
+			resources they need to thrive.
+			<div class="mt-4 text-sm text-gray-700">
+				Contact us: <a
+					href="mailto:hi@ummah.works"
+					rel="noopener noreferrer"
+					target="_blank"
+					class="text-green-700 underline underline-offset-4 font-semibold tracking-wider"
+					aria-label="mail ummah.works">hi@ummah.works</a
+				>
+			</div>
 		</Fragment>
-	</Hero2>
+	</Intro>
+	<Goals />
 </Layout>

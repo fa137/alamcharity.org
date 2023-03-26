@@ -1,6 +1,5 @@
 ---
 import Layout from "~/layouts/BaseLayout.astro";
-import Header from "~/components/widgets/Header.astro";
 
 import { MetaSEO } from "~/types";
 
@@ -12,9 +11,6 @@ const { meta } = Astro.props;
 ---
 
 <Layout {meta}>
-	<slot name="header">
-		<Header />
-	</slot>
 	<main>
 		<slot />
 	</main>

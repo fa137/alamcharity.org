@@ -7,8 +7,8 @@ const CONFIG = {
 	basePathname: "/",
 	trailingSlash: false,
 
-	title: "AlamCharity",
-	description: "Nonprofit Org",
+	title: "alamcharity.org",
+	description: "towards a better future",
 	defaultImage: defaultImage,
 
 	defaultTheme: "system", // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
